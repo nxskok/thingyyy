@@ -6,7 +6,7 @@ Authors@R:
            family = "Butler",
            role = c("aut", "cre"),
            email = "butler@utsc.utoronto.ca")
-Description: still adds one
+Description: still adds one.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
