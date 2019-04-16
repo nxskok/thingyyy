@@ -10,3 +10,5 @@ Description: still adds one
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/nxskok/thingyyy
+BugReports: https://github.com/nxskok/thingyyy/issues
