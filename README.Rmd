@@ -1,0 +1,56 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# thingyyy
+
+Two random functions, testing my ability to make a package.
+
+## Installation
+
+You can install thingyyy from github with:
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("nxskok/thingyyy")
+```
+
+## Example
+
+There are two functions.
+
+The first one adds one to anything you feed it, if it can:
+
+```{r, error=T}
+library("thingyyy")
+add_one(3)
+add_one(c(2,4))
+add_one("x")
+```
+
+The second one takes a data frame with a quantitative column `x`, a categorical column `g`, and something else that will say what goes in which row, and spreads it into wide format:
+
+```{r}
+dd = tibble::tribble(
+~r, ~x, ~g,
+1, 10, "a",
+2, 12, "a",
+3, 14, "a",
+1, 15, "b",
+2, 17, "b",
+3, 19, "b"
+)
+dd
+my_spread(dd)
+```
+

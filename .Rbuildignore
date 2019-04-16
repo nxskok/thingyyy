@@ -1,3 +1,5 @@
 ^LICENSE\.md$
 ^thingyyy\.Rproj$
 ^\.Rproj\.user$
+^README\.Rmd$
+^README-.*\.png$
